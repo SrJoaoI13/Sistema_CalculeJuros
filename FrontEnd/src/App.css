@@ -1,0 +1,269 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.subtitle strong {
+  color: #764ba2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.opcional {
+  font-weight: 400;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.obrigatorio {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.field input {
+  padding: 12px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #111827;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.15);
+}
+
+.btn {
+  margin-top: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.erro {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.resultado {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #f3f4f6;
+}
+
+.resultado h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.linha span {
+  color: #6b7280;
+}
+
+.linha strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.linha.destaque {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.linha.destaque strong {
+  color: #dc2626;
+  font-size: 17px;
+}
+
+.linha.total {
+  margin-top: 4px;
+  padding: 14px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  border-radius: 10px;
+}
+
+.linha.total span {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.linha.total strong {
+  font-size: 20px;
+  color: #764ba2;
+}
+
+.atraso {
+  color: #dc2626 !important;
+  font-weight: 700 !important;
+}
+
+.calculo {
+  margin: 16px 0;
+  padding: 18px 16px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.calculo h3 {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.etapa {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.etapa:last-child {
+  border-bottom: none;
+}
+
+.etapa-num {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.etapa-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.etapa-titulo {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.etapa-valor {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.etapa-resultado {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 2px;
+}
+
+.etapa.final .etapa-resultado {
+  color: #764ba2;
+  font-size: 16px;
+}
+
+.etapa:nth-child(4) .etapa-num {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.sem-atraso {
+  margin: 16px 0;
+  padding: 14px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
